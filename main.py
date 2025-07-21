@@ -4,10 +4,10 @@ import yfinance as yf
 
 app = FastAPI()
 
-# Allow CORS from React frontend
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # or "*" for development
+    allow_origins=["http://localhost:5173"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
